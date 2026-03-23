@@ -34,6 +34,13 @@ for itmeproducto in listaproductos:
     precio = itmeproducto.find("p").text
     print("\nNombre: ", nombre, " precio: ", precio)
 
+
+print("\nOpiniones:") #\n salto de linea es equivalente a dar un enter
+listaopiniones = soup.find_all("li")
+
+for itmeopiniones in listaopiniones:
+    print( "-" ,itmeopiniones.text )
+    
 # print(soup.find("h3").text)
 
 
